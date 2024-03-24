@@ -108,8 +108,65 @@
   }
 
   @media screen and (max-width:480px) {
-    
+
     .search-result{
         width: 100%;
     }
   }
+
+  /* Add this CSS to style the liked images section */
+  h2{
+    text-align: center;
+  }
+#liked-images {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .liked-image {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgb(0, 0, 0 ,0.2);
+    overflow: hidden;
+  }
+  
+  .liked-image img {
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: opacity 0.2s ease-in-out;
+  }
+
+  .liked-image:hover img{
+    opacity: 0.8;
+  }
+  
+  .liked-image a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+
+  
+.like-button {
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .like-button:hover {
+    background-color: #0e604f;
+  }
+  
+  
