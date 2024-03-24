@@ -108,8 +108,7 @@
   }
 
   @media screen and (max-width:480px) {
-
-    .search-result{
+   .search-result{
         width: 100%;
     }
   }
